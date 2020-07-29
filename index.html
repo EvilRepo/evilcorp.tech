@@ -141,9 +141,8 @@
             body {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                padding: 48px;
                 font-family: 'PT Serif', serif;
                 color: white;
                 /* background: rgb(0, 0, 0); */
@@ -159,15 +158,16 @@
 
             .logo-a53d26 {
                 width: 100%;
-                max-width: 1200px;
             }
 
             .main-79a16c {
+                padding: 1em;
                 text-align: left;
             }
 
             .anthem-a67c48 {
-                font-size: 48pt;
+                font-size: 2em;
+                font-size: clamp(2em, 6vw, 3em);
                 color: transparent;
                 background: linear-gradient(45deg, hsl(211deg 100% 50%) 50%, hsl(322deg 100% 55%) 50%);
                 -webkit-background-clip: text;
@@ -175,20 +175,19 @@
             }
 
             .message-6a8db5 {
-                margin-top: 4em;
+                margin-top: 10%;
+                font-size: 1.2em;
+                font-size: clamp(1.2em, 2vw, 1.5em);
                 text-align: center;
             }
 
             /* Header *********************************************************/
 
             .head-27fbdc {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
+                width: 100%;
                 display: flex;
                 justify-content: flex-end;
-                padding: 2em;
+                padding-top: 1em;
             }
 
             .link-c269f4 {
@@ -207,12 +206,8 @@
             /* Footer *********************************************************/
 
             .foot-3f55ff {
-                color: hsla(0deg, 0%, 100%, .6);
                 text-transform: uppercase;
-                position: fixed;
-                left: 0;
-                right: 0;
-                bottom: 0;
+                color: hsla(0deg, 0%, 100%, .6);
             }
 
             .list-0fffdb {
@@ -221,7 +216,7 @@
                 align-items: center;
             }
             .list-0fffdb li {
-                margin: 2em 1em;
+                margin: 1em;
             }
         </style>
 
